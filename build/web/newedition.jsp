@@ -12,7 +12,7 @@
     #newedition-form {
         display: flex;
         flex-direction: column;
-        max-width: 320px;
+        max-width: 600px;
         margin: 0 auto;
         min-height: 200px;
         border: solid black 1px;
@@ -44,6 +44,11 @@
     #submit {
         font-size: 18px;
     }
+    
+    .buttons {
+        flex-direction: row;
+        margin: 0 auto;        
+    }
 
     .text-center {
         text-align: center;
@@ -51,15 +56,15 @@
   </style>
 </head>
 <body>
-  <h1 class="text-center">Nova edição</h1>
-  <form id="newedition-form" method="post">
+    <h1 class="text-center">Nova edição</h1>
+    <form id="newedition-form" method="post">
         <div class="form-item">
             <label for="number">Número</label>
             <input type="number" required step="1" name="number" value="${number}">
         </div>
         <div class="form-item">
             <label for="year">Ano</label>
-            <input type="number" required step="1" name="year" value="${year}">
+            <input type="text" required step="1" name="year" value="${year}">
         </div>
         <div class="form-item">
             <label for="startDate">Data de início</label>
@@ -78,8 +83,11 @@
             <input type="text" required step="1" name="country" value="${country}">
         </div>
         <div class="form-item">
-            <input id="submit" type="submit" value="Confirmar"></input>
+            <div class="buttons">
+                <input id="submit" type="submit" value="Voltar"></input>
+                <input id="submit" type="submit" value="Confirmar"></input>
+            </div>
         </div>
-  </form>
+    </form>
 </body>
 </html>

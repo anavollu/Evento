@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novo evento</title>
+  <title>Editar edição</title>
   <style>
     html {
         font-family: sans-serif;
     }
 
-    #newevent-form {
+    #editedition-form {
         display: flex;
         flex-direction: column;
         max-width: 600px;
@@ -56,25 +56,8 @@
   </style>
 </head>
 <body>
-    <h1 class="text-center">Novo evento</h1>
-    <form id="newevent-form" method="post">
-        <div class="form-item">
-            <label for="name">Nome</label>
-            <input type="text" required step="1" name="name" value="${name}">
-        </div>
-        <div class="form-item">
-            <label for="initials">Sigla</label>
-            <input type="text" required step="1" name="initials" value="${initials}">
-        </div>
-        <div class="form-item">
-            <label for="concArea">Área de concentração</label>
-            <input type="text" required step="1" name="concArea" value="${concArea}">
-        </div>
-        <div class="form-item">
-            <label for="orgInstitution">Instituição organizadora</label>
-            <input type="text" required step="1" name="orgInstitution" value="${orgInstitution}">
-        </div>
-        <h3>Edição</h3>
+    <h1 class="text-center">Editar edição</h1>
+    <form id="editedition-form" method="post">
         <div class="form-item">
             <label for="number">Número</label>
             <input type="number" required step="1" name="number" value="${number}">

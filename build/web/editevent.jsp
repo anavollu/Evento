@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novo evento</title>
+  <title>Editar evento</title>
   <style>
     html {
         font-family: sans-serif;
     }
 
-    #newevent-form {
+    #editevent-form {
         display: flex;
         flex-direction: column;
         max-width: 600px;
@@ -56,8 +56,8 @@
   </style>
 </head>
 <body>
-    <h1 class="text-center">Novo evento</h1>
-    <form id="newevent-form" method="post">
+    <h1 class="text-center">Editar evento</h1>
+    <form id="editevent-form" method="post">
         <div class="form-item">
             <label for="name">Nome</label>
             <input type="text" required step="1" name="name" value="${name}">
@@ -73,31 +73,6 @@
         <div class="form-item">
             <label for="orgInstitution">Instituição organizadora</label>
             <input type="text" required step="1" name="orgInstitution" value="${orgInstitution}">
-        </div>
-        <h3>Edição</h3>
-        <div class="form-item">
-            <label for="number">Número</label>
-            <input type="number" required step="1" name="number" value="${number}">
-        </div>
-        <div class="form-item">
-            <label for="year">Ano</label>
-            <input type="text" required step="1" name="year" value="${year}">
-        </div>
-        <div class="form-item">
-            <label for="startDate">Data de início</label>
-            <input type="date" required step="1" name="startDate" value="${startDate}">
-        </div>
-        <div class="form-item">
-            <label for="endDate">Data fim</label>
-            <input type="date" required step="1" name="endDate" value="${endDate}">
-        </div>
-        <div class="form-item">
-            <label for="mainCity">Cidade sede</label>
-            <input type="text" required step="1" name="mainCity" value="${mainCity}">
-        </div>
-        <div class="form-item">
-            <label for="country">País</label>
-            <input type="text" required step="1" name="country" value="${country}">
         </div>
         <div class="form-item">
             <div class="buttons">
